@@ -1,0 +1,37 @@
+# Initialise Project
+```{r}
+# Initialise settings
+library(foreign); library(psych); library(readxl)
+options(stringsAsFactors = FALSE)
+
+##### Import data
+# rcases <- read.spss("", to.data.frame = TRUE)
+# rcases <- read_excel("")
+names(rcases) <- tolower(names(rcases))
+
+
+##### Inspect data
+dim(rcases)
+names(rcases)
+# attr(rcases, "variable.labels")
+
+
+#### Create Variable lists 
+head(rcases)
+dput(names(rcases))
+v <- list()
+# v$neo_scales <- c("n", "e", "o", "a", "c")
+# v$demographics <- c("isfemale", "age")
+# v$ability_subscales 
+
+
+# Data Manipulations
+# rcases$isfemale <- as.numeric(rcases$sex == "female")
+
+
+# Basic analyses
+# psych::describe(rcases[,c(v$demographics, v$neo_domains, v$ability_subscales)])
+# round(cor(rcases[,c(v$demographics, v$neo_domains, v$ability_subscales)], use = "pair"), 2)
+
+```
+
