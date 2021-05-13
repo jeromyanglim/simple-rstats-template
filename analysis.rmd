@@ -13,7 +13,8 @@ names(rcases) <- tolower(names(rcases))
 ##### Inspect data
 dim(rcases)
 names(rcases)
-# attr(rcases, "variable.labels")
+# data.frame(name = names(attr(rcases, "variable.labels")), 
+#            label = attr(rcases, "variable.labels"), row.names = NULL)
 
 
 #### Create Variable lists 
